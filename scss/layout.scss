@@ -36,11 +36,11 @@
 
     &__image {
       @include image-default-size;
-      background: url("../resources/mainview/Villa1-54.png") no-repeat;
+      background: url("../resources/mainview/Villa1-54.jpg") no-repeat;
       flex-grow: 0;
       flex-shrink: 0;
       &.type__two{
-        background: url("../resources/mainview/Villa2-4.png") no-repeat;
+        background: url("../resources/mainview/Villa2-4.jpg") no-repeat;
       }
 
     }

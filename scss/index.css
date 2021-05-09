@@ -11,9 +11,16 @@
   justify-content: space-around;
   margin-bottom: 19px;
 }
+.header__links__container li {
+  list-style-type: none;
+}
+.header__links__container li a {
+  text-decoration: none;
+  color: black;
+}
 
 .preview {
-  background: url("../resources/mainview/Villa1-7.png") no-repeat;
+  background: url("../resources/mainview/Villa1-7.jpg") no-repeat;
   background-size: 100%;
   height: 710px;
   display: flex;
@@ -62,7 +69,7 @@
   display: flex;
 }
 .welcome__outdoor__img {
-  background: url("../resources/mainview/Outdoor-35.png");
+  background: url("../resources/mainview/Outdoor-35.jpg");
   width: 295px;
   height: 197px;
   flex-grow: 0;
@@ -77,7 +84,7 @@
 }
 .welcome__info__field__img {
   margin: 41px 0 0 0;
-  background: url("../resources/mainview/Outdoor-10.png") no-repeat;
+  background: url("../resources/mainview/Outdoor-10.jpg") no-repeat;
   width: 898px;
   height: 478px;
 }
@@ -103,7 +110,7 @@
   justify-content: flex-end;
 }
 .welcome__build__info__img {
-  background: url("../resources/mainview/Outdoor-9.png") no-repeat;
+  background: url("../resources/mainview/Outdoor-9.jpg") no-repeat;
   height: 551px;
   width: 824px;
 }
@@ -127,7 +134,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 37px;
-  background: url("../resources/mainview/bookingBack.png") no-repeat;
+  background: url("../resources/mainview/bookingBack.jpg") no-repeat;
   background-size: 100%;
   height: 632px;
 }
@@ -191,12 +198,12 @@
 .layout__villa__image {
   height: 381px;
   width: 572px;
-  background: url("../resources/mainview/Villa1-54.png") no-repeat;
+  background: url("../resources/mainview/Villa1-54.jpg") no-repeat;
   flex-grow: 0;
   flex-shrink: 0;
 }
 .layout__villa__image.type__two {
-  background: url("../resources/mainview/Villa2-4.png") no-repeat;
+  background: url("../resources/mainview/Villa2-4.jpg") no-repeat;
 }
 .layout__villa span {
   margin-left: 27px;
@@ -225,7 +232,7 @@
 }
 .outdoor__image {
   margin: 0;
-  background: url("../resources/mainview/Outdoor-6.png") no-repeat;
+  background: url("../resources/mainview/Outdoor-6.jpg") no-repeat;
   height: 380px;
   width: 570px;
 }
@@ -258,11 +265,13 @@
 
 .services__background {
   margin-top: 53px;
-  background: url("../resources/mainview/services_bg.png") no-repeat;
+  background: url("../resources/mainview/services_bg.jpg") no-repeat;
+  background-size: 100%;
   height: 533px;
 }
 .services__blur {
   background: url("../resources/mainview/services_blur.png") no-repeat;
+  background-size: 100%;
   height: 533px;
   display: flex;
   flex-direction: column;
@@ -283,6 +292,10 @@
   font-size: 30px;
   color: #fff;
   position: absolute;
+}
+.services__extra {
+  display: flex;
+  justify-content: center;
 }
 .services__extra__title {
   color: #00bfff;
@@ -355,6 +368,8 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
   margin-top: 42px;
   background-color: #cbe3fb;
   height: 258px;
@@ -383,7 +398,7 @@
 }
 .footer__contact__info__map {
   margin-right: 39px;
-  background: url("../resources/footer/map.png") no-repeat;
+  background: url("../resources/footer/map.jpg") no-repeat;
   width: 100%;
   height: 206px;
 }
@@ -416,6 +431,15 @@
   margin-top: 21px;
 }
 
+@media (max-width: 1269px) {
+  .booking__title, .services__blur__title {
+    margin-top: -25%;
+  }
+
+  .preview__title {
+    margin-top: -5%;
+  }
+}
 .wrapper {
   width: 1140px;
   display: flex;
